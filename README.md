@@ -64,8 +64,8 @@ int main()
     // LaunchOrange를 호출합니다. 인수 문자열은 반드시 유니코드입니다!!!
     const auto ret = LaunchOrange(
         L"Modelexport.pkcls",               // 모델 파일
-        L"Modeltest.tab",                      // 데이터 파일
-        &csv);                                         // 결과 반환용
+        L"Modeltest.tab",                   // 데이터 파일
+        &csv);                              // 결과 반환용
     );
     // 리턴값 ret은 int형으로 0이 아니면 오류입니다.
     if (ret != 0)
@@ -85,7 +85,7 @@ int main()
 
 ### 기타 사항
 
-주석에 표시되어 있지만 반환용 인수 csv는 malloc할당입니다. 사용 후엔 ***free***로 해제하세요. ***delete[]***로 해제하면 안됩니다.
+주석에 표시되어 있지만 반환용 인수 csv는 malloc할당입니다. 사용 후엔 *free*로 해제하세요. *delete*로 해제하면 안됩니다.
 
 사실 필요한 파일은 *LaunchOrange.cpp* 뿐이므로 별도의 라이브러리로 만들지 않았습니다. 그 쪽이 갖다 사용할 때 더 불편하겠죠. 프로젝트나 make파일에 위에 코드 파일을 추가하세요.
 
