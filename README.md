@@ -41,7 +41,7 @@ PS C:\> python test.py
 
 ## C/C++ 에서 사용
 
-*LaunchOrange.cpp*와 *LaunchOrange.h*를 프로젝트에 등록합니다. 윈도우 헤더 이외에 표준 C++14만 사용했으므로 MSV, CLANG에서 모두 사용할 수 있습니다.
+*LaunchOrange.cpp*와 *LaunchOrange.h*를 프로젝트에 등록합니다. 윈도우 헤더 이외에 표준 C++14만 사용했으므로 MSVC, CLANG에서 모두 사용할 수 있습니다.
 
 ### 테스트
 
